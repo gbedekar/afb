@@ -201,7 +201,6 @@ export async function queryRequest(endpoint, endpointHost, type, submitUrl="" ,q
   hasEnd = params.has('enddate');
   hasInterval = params.has('interval');
   hasOffset = params.has('offset');
-  params.set('domainkey','2396e7a6-46fa-4e75-afb9-aed2611f58ac');
   // default to interval 30 if params are not set
   if (!hasStart && !hasEnd && !hasInterval && !hasOffset) {
     params.set('interval', '30');
